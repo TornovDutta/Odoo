@@ -4,7 +4,6 @@ import AddProductForm from "./AddProductForm";
 const page = () => {
   return (
     <div>
-      This is Add Product!
       <AddProductForm />;
     </div>
   );
