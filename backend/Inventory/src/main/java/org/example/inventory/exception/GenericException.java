@@ -35,6 +35,11 @@ public class GenericException {
         ErrorResponse errorResponse = new ErrorResponse(LocalDateTime.now(),"warehouse not found",e.getMessage());
         return  new ResponseEntity<>(errorResponse,HttpStatus.NOT_FOUND);
     }
+    @ExceptionHandler(StockNotFoundException.class)
+    public ResponseEntity<?> handleStockNotFoundException(StockNotFoundException e){
+        ErrorResponse errorResponse = new ErrorResponse(LocalDateTime.now(),"stock not found",e.getMessage());
+        return  new ResponseEntity<>(errorResponse,HttpStatus.NOT_FOUND);
+    }
 
 
 }
