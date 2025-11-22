@@ -30,6 +30,11 @@ public class GenericException {
         ErrorResponse errorResponse = new ErrorResponse(LocalDateTime.now(),"Receipt not found",e.getMessage());
         return  new ResponseEntity<>(errorResponse,HttpStatus.NOT_FOUND);
     }
+    @ExceptionHandler(WarehouseNotFoundException.class)
+    public ResponseEntity<?> handleWarehouseNotFoundException(WarehouseNotFoundException e){
+        ErrorResponse errorResponse = new ErrorResponse(LocalDateTime.now(),"warehouse not found",e.getMessage());
+        return  new ResponseEntity<>(errorResponse,HttpStatus.NOT_FOUND);
+    }
 
 
 }

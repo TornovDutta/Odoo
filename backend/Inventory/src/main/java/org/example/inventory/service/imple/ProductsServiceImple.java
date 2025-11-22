@@ -15,6 +15,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ProductsServiceImple implements ProductsService {
     private final ProductsRepo repo;
+    @Override
     public List<ProductsDto> get(){
         List<Products> products=repo.findAll();
         List<ProductsDto> returnAns=new ArrayList<>();
@@ -25,6 +26,8 @@ public class ProductsServiceImple implements ProductsService {
         }
         return returnAns;
     }
+
+    @Override
     public ProductsDto getByID(String id) throws ProductNotFoundException{
         Products products = repo.findById(id)
                 .orElseThrow(() -> new ProductNotFoundException("id not found"));
@@ -39,6 +42,8 @@ public class ProductsServiceImple implements ProductsService {
                 products.getLowStockAlert()
         );
     }
+
+    @Override
     public ProductsDto create(ProductsDto dto) {
         Products p = new Products(
                 null,
@@ -60,6 +65,8 @@ public class ProductsServiceImple implements ProductsService {
                 saved.getLowStockAlert()
         );
     }
+
+    @Override
     public ProductsDto update(String id, ProductsDto dto) {
         Products existing = repo.findById(id)
                 .orElseThrow(() -> new ProductNotFoundException("id not found"));
@@ -81,6 +88,7 @@ public class ProductsServiceImple implements ProductsService {
                 updated.getLowStockAlert()
         );
     }
+    @Override
     public void delete(String id) {
         Products existing = repo.findById(id)
                 .orElseThrow(() -> new ProductNotFoundException("id not found"));
