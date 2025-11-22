@@ -31,4 +31,5 @@ public class GenericException {
         return  new ResponseEntity<>(errorResponse,HttpStatus.NOT_FOUND);
     }
 
+
 }
