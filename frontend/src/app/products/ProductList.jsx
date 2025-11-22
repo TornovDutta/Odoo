@@ -16,65 +16,168 @@ const ProductList = () => {
               <thead>
                 <tr>
                   <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">
-                    Plan
+                    Name
                   </th>
                   <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
-                    Speed
+                    SKU
                   </th>
                   <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
-                    Storage
+                    Catagory
                   </th>
                   <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
-                    Price
+                    UOM
+                  </th>
+                  <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+                    UOM
+                  </th>
+                  <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+                    LSA
                   </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="px-4 py-3">Start</td>
-                  <td className="px-4 py-3">5 Mb/s</td>
-                  <td className="px-4 py-3">15 GB</td>
-                  <td className="px-4 py-3 text-lg text-gray-900">Free</td>
+                  <td className="px-4 py-3">Premium Rice 1kg</td>
+                  <td className="px-4 py-3">PR-001</td>
+                  <td className="px-4 py-3">Grocery</td>
+                  <td className="px-4 py-3">Kg</td>
+                  <td className="px-4 py-3">1</td>
+                  <td className="px-4 py-3">20</td>
                 </tr>
+
                 <tr>
-                  <td className="border-t-2 border-gray-200 px-4 py-3">Pro</td>
-                  <td className="border-t-2 border-gray-200 px-4 py-3">
-                    25 Mb/s
-                  </td>
-                  <td className="border-t-2 border-gray-200 px-4 py-3">
-                    25 GB
-                  </td>
-                  <td className="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">
-                    $24
-                  </td>
+                  <td className="px-4 py-3">Sunflower Oil 5L</td>
+                  <td className="px-4 py-3">SO-005</td>
+                  <td className="px-4 py-3">Oil</td>
+                  <td className="px-4 py-3">Litre</td>
+                  <td className="px-4 py-3">5</td>
+                  <td className="px-4 py-3">10</td>
                 </tr>
+
                 <tr>
-                  <td className="border-t-2 border-gray-200 px-4 py-3">
-                    Business
-                  </td>
-                  <td className="border-t-2 border-gray-200 px-4 py-3">
-                    36 Mb/s
-                  </td>
-                  <td className="border-t-2 border-gray-200 px-4 py-3">
-                    40 GB
-                  </td>
-                  <td className="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">
-                    $50
-                  </td>
+                  <td className="px-4 py-3">Wheat Flour 2kg</td>
+                  <td className="px-4 py-3">WF-002</td>
+                  <td className="px-4 py-3">Grocery</td>
+                  <td className="px-4 py-3">Kg</td>
+                  <td className="px-4 py-3">2</td>
+                  <td className="px-4 py-3">25</td>
                 </tr>
+
                 <tr>
-                  <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3">
-                    Exclusive
-                  </td>
-                  <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3">
-                    48 Mb/s
-                  </td>
-                  <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3">
-                    120 GB
-                  </td>
-                  <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg text-gray-900">
-                    $72
-                  </td>
+                  <td className="px-4 py-3">Green Tea Pack</td>
+                  <td className="px-4 py-3">GT-010</td>
+                  <td className="px-4 py-3">Beverages</td>
+                  <td className="px-4 py-3">Pack</td>
+                  <td className="px-4 py-3">1</td>
+                  <td className="px-4 py-3">15</td>
+                </tr>
+
+                <tr>
+                  <td className="px-4 py-3">Chocolate Cookies</td>
+                  <td className="px-4 py-3">CC-021</td>
+                  <td className="px-4 py-3">Snacks</td>
+                  <td className="px-4 py-3">Box</td>
+                  <td className="px-4 py-3">1</td>
+                  <td className="px-4 py-3">30</td>
+                </tr>
+
+                <tr>
+                  <td className="px-4 py-3">Fresh Milk 1L</td>
+                  <td className="px-4 py-3">FM-011</td>
+                  <td className="px-4 py-3">Dairy</td>
+                  <td className="px-4 py-3">Litre</td>
+                  <td className="px-4 py-3">1</td>
+                  <td className="px-4 py-3">12</td>
+                </tr>
+
+                <tr>
+                  <td className="px-4 py-3">Butter 500g</td>
+                  <td className="px-4 py-3">BT-500</td>
+                  <td className="px-4 py-3">Dairy</td>
+                  <td className="px-4 py-3">Gram</td>
+                  <td className="px-4 py-3">500</td>
+                  <td className="px-4 py-3">8</td>
+                </tr>
+
+                <tr>
+                  <td className="px-4 py-3">Handwash Liquid</td>
+                  <td className="px-4 py-3">HW-100</td>
+                  <td className="px-4 py-3">Home Care</td>
+                  <td className="px-4 py-3">Bottle</td>
+                  <td className="px-4 py-3">1</td>
+                  <td className="px-4 py-3">18</td>
+                </tr>
+
+                <tr>
+                  <td className="px-4 py-3">Laundry Detergent</td>
+                  <td className="px-4 py-3">LD-750</td>
+                  <td className="px-4 py-3">Home Care</td>
+                  <td className="px-4 py-3">Gram</td>
+                  <td className="px-4 py-3">750</td>
+                  <td className="px-4 py-3">20</td>
+                </tr>
+
+                <tr>
+                  <td className="px-4 py-3">LED Bulb 12W</td>
+                  <td className="px-4 py-3">LB-012</td>
+                  <td className="px-4 py-3">Electronics</td>
+                  <td className="px-4 py-3">Piece</td>
+                  <td className="px-4 py-3">1</td>
+                  <td className="px-4 py-3">25</td>
+                </tr>
+
+                <tr>
+                  <td className="px-4 py-3">Shampoo 250ml</td>
+                  <td className="px-4 py-3">SH-250</td>
+                  <td className="px-4 py-3">Personal Care</td>
+                  <td className="px-4 py-3">ml</td>
+                  <td className="px-4 py-3">250</td>
+                  <td className="px-4 py-3">15</td>
+                </tr>
+
+                <tr>
+                  <td className="px-4 py-3">Face Wash 100ml</td>
+                  <td className="px-4 py-3">FW-100</td>
+                  <td className="px-4 py-3">Personal Care</td>
+                  <td className="px-4 py-3">ml</td>
+                  <td className="px-4 py-3">100</td>
+                  <td className="px-4 py-3">10</td>
+                </tr>
+
+                <tr>
+                  <td className="px-4 py-3">Notebook A4</td>
+                  <td className="px-4 py-3">NB-A4</td>
+                  <td className="px-4 py-3">Stationary</td>
+                  <td className="px-4 py-3">Piece</td>
+                  <td className="px-4 py-3">1</td>
+                  <td className="px-4 py-3">40</td>
+                </tr>
+
+                <tr>
+                  <td className="px-4 py-3">Gel Pen Blue</td>
+                  <td className="px-4 py-3">GP-BL</td>
+                  <td className="px-4 py-3">Stationary</td>
+                  <td className="px-4 py-3">Piece</td>
+                  <td className="px-4 py-3">1</td>
+                  <td className="px-4 py-3">100</td>
+                </tr>
+
+                <tr>
+                  <td className="px-4 py-3">Power Bank 10000mAh</td>
+                  <td className="px-4 py-3">PB-10K</td>
+                  <td className="px-4 py-3">Electronics</td>
+                  <td className="px-4 py-3">Piece</td>
+                  <td className="px-4 py-3">1</td>
+                  <td className="px-4 py-3">5</td>
+                </tr>
+
+                <tr>
+                  <td className="px-4 py-3">USB Cable Type-C</td>
+                  <td className="px-4 py-3">USBC-01</td>
+                  <td className="px-4 py-3">Accessories</td>
+                  <td className="px-4 py-3">Piece</td>
+                  <td className="px-4 py-3">1</td>
+                  <td className="px-4 py-3">30</td>
                 </tr>
               </tbody>
             </table>
@@ -86,9 +189,6 @@ const ProductList = () => {
             >
               Add Product <b className="ml-2"> +</b>
             </Link>
-            <button className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
-              Button
-            </button>
           </div>
         </div>
       </section>
