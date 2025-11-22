@@ -30,7 +30,7 @@ public class ProductController {
         ProductsDto saved = productsService.create(dto);
         return ResponseEntity.status(HttpStatus.CREATED).body(saved);
     }
-    @PutMapping("/{id}")
+    @PatchMapping("/{id}")
     public ResponseEntity<?> update(@PathVariable String id,
                                               @RequestBody ProductsDto dto) {
         ProductsDto updated = productsService.update(id, dto);
