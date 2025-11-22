@@ -81,7 +81,7 @@ const ProductList = () => {
           </div>
           <div className="flex pl-4 mt-4 lg:w-2/3 w-full mx-auto">
             <Link
-              href="/stock/add_product"
+              href="/products/add_product"
               className="text-green-500 inline-flex items-center md:mb-2 lg:mb-0 border-2 px-2 rounded-2xl border-green-500"
             >
               Add Product <b className="ml-2"> +</b>
