@@ -1,7 +1,7 @@
 # StockMaster – Inventory Management System (IMS)
 
 A modular, full-stack Inventory Management System built using **Spring Boot** (Backend API) and **Next.js** (Frontend).  
-This system digitizes all stock operations and replaces manual registers, Excel sheets, and scattered tracking methods with a centralized, real-time, user-friendly platform.
+This system digitizes all stock operations and replaces manual registers, Excel sheets, and scattered tracking methods with a centralized, real-time, user-friendly platforms.
 
 ## 🚀 Features
 
